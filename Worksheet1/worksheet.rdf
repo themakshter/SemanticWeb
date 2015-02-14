@@ -2,13 +2,16 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 		 xmlns:dc="http://purl.org/dc/elements/1.1/"
 		 xmlns:foaf="http://xmlns.com/foaf/0.1/">
+
 	<rdf:Description rdf:about="">
 		<dc:creator rdf:resource="me"/>
-		<dc:date>2015-02-14</dc:date>
+		<dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-02-14</dc:date>
 	</rdf:Description>
+
 	<foaf:Person rdf:ID="me">
 		<foaf:familyName>Khan</foaf:familyName>
 		<foaf:givenName>Mohammad Ali</foaf:givenName>
 		<foaf:mbox rdf:resource="mailto:mak1g11@soton.ac.uk"/>
 	</foaf:Person>
+
 </rdf:RDF>
