@@ -32,29 +32,34 @@
 		 	<rdfs:subPropertyOf rdf:resource="&foaf;member"/>
 		 	<rdfs:doman rdf:resource="University"/>
 		 	<rdfs:range rdf:resource="Academic"/>
+		 	<rdfs:comment>A university has employees who are academics</rdfs:comment>
 		 </rdf:Property>
 
 		 <rdf:Property rdf:ID="hasStudent">
 		 	<rdfs:subPropertyOf rdf:resource="&foaf;member"/>
 		 	<rdfs:domain rdf:resource="University"/>
 		 	<rdfs:range rdf:resource="Student"/>
+		 	<rdfs:comment>A university has students</rdfs:comment>
 		 </rdf:Property>
 
 		 <rdf:Property rdf:ID="taughtBy">
 		 	<rdfs:subPropertyOf rdf:resource="&foaf;member"/>
 		 	<rdfs:domain rdf:resource="Module"/>
 		 	<rdfs:range rdf:resource="Academic"/>
+		 	<rdfs:comment>A module is taught by an academic</rdfs:comment>
 		 </rdf:Property>
 
 		 <rdf:Property rdf:ID="hasEnrolled">
 		 	<rdfs:subPropertyOf rdf:resource="&foaf;member"/>
 		 	<rdfs:domain rdf:resource="Module"/>
 		 	<rdfs:range rdf:resource="Student"/>
+		 	<rdfs:comment>A module has students enrolled on it</rdfs:comment>
 		 </rdf:Property>
 
 		 <rdf:Property rdf:ID="taughtAt">
 		 	<rdfs:domain rdf:resource="Module"/>
 		 	<rdfs:range rdf:resource="University"/>
+		 	<rdfs:comment>A module is taught at some university</rdfs:comment>
 		 </rdf:Property>
 
 </rdf:RDF>
