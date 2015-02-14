@@ -29,15 +29,19 @@
 		 </rdfs:Class>
 
 		 <rdfs:Property rdf:ID="hasEmployee">
+		 	<rdfs:subPropertyOf rdf:resource="&foaf;member"/>
 		 </rdfs:Property>
 
 		 <rdfs:Property rdf:ID="hasStudent">
+		 	<rdfs:subPropertyOf rdf:resource="&foaf;member"/>
 		 </rdfs:Property>
 
 		 <rdfs:Property rdf:ID="taughtBy">
+		 	<rdfs:subPropertyOf rdf:resource="&foaf;member"/>
 		 </rdfs:Property>
 
 		 <rdfs:Property rdf:ID="hasEnrolled">
+		 	<rdfs:subPropertyOf rdf:resource="&foaf;member"/>
 		 </rdfs:Property>
 
 		 <rdf:Property rdf:ID="taughtAt">
