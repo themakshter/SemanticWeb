@@ -8,9 +8,12 @@
 		<dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-02-14</dc:date>
 	</rdf:Description>
 
-	<foaf:Person rdf:ID="me">
+	<foaf:Person rdf:ID="themakshter">
 		<foaf:familyName>Khan</foaf:familyName>
-		<foaf:givenName>Mohammad Ali</foaf:givenName>
+		<foaf:firstName>Mohammad Ali</foaf:firstName>
+		<foaf:gender>Male</foaf:gender>
+		<foaf:age>21</foaf:age>
+		<foaf:homepage>http://themakshter.me/</foaf:homepage>
 		<foaf:mbox rdf:resource="mailto:mak1g11@soton.ac.uk"/>
 	</foaf:Person>
 
