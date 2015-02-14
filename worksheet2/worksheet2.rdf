@@ -10,18 +10,22 @@
 
 		 <rdfs:Class rdf:ID="Student">
 		 	<rdfs:subClassOf rdf:resource="&foaf;Person"/>
+		 	<rdfs:comment>A person who is studying at some university</rdfs:comment>
 		 </rdfs:Class>
 
 		 <rdfs:Class rdf:ID="Academic">
 		 	<rdfs:subClassOf rdf:resource="&foaf;Person"/>
+		 	<rdfs:comment>A person who teaches at some university</rdfs:comment> 
 		 </rdfs:Class>
 
 		 <rdfs:Class rdf:ID="University">
 		 	<rdfs:subClassOf rdf:resource="&foaf;Organization"/>
+		 	<rdfs:comment>A higher education organization</rdfs:comment>
 		 </rdfs:Class>
 
 		 <rdfs:Class rdf:ID="Module">
 		 	<rdfs:subClassOf rdf:resource="&foaf;Group"/>
+		 	<rdfs:comment>A unit of teaching at a university</rdfs:comment>
 		 </rdfs:Class>
 
 </rdf:RDF>
