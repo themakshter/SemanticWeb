@@ -1,19 +1,27 @@
 <?xml version="1.0"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY foaf 'http://xmlns.com/foaf/0.1'>	
+]>
+
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 		 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 		 xmlns:foaf="http://xmlns.com/foaf/0.1/"
 		 xmlns:base="http://example.org/ontology/">
 
 		 <rdfs:Class rdf:ID="Student">
+		 	<rdfs:subClassOf rdf:resource="&foaf;Person"/>
 		 </rdfs:Class>
 
 		 <rdfs:Class rdf:ID="Academic">
-		 </rdfs:Class>
-
-		 <rdfs:Class rdf:ID="Module">
+		 	<rdfs:subClassOf rdf:resource="&foaf;Person"/>
 		 </rdfs:Class>
 
 		 <rdfs:Class rdf:ID="University">
+		 	<rdfs:subClassOf rdf:resource="&foaf;Organization"/>
+		 </rdfs:Class>
+
+		 <rdfs:Class rdf:ID="Module">
+		 	<rdfs:subClassOf rdf:resource="&foaf;Group"/>
 		 </rdfs:Class>
 
 </rdf:RDF>
