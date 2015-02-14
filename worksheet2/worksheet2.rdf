@@ -6,7 +6,15 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 		 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 		 xmlns:foaf="http://xmlns.com/foaf/0.1/"
+		 xmlns:dc="http://purl.org/dc/elements/1.1/"
 		 xmlns:base="http://example.org/ontology/">
+
+		<rdf:Description rdf:about="">
+			<dc:title>Example University Schema</dc:title>
+			<dc:description>This RDF schema was created as an example for the COMP6215 module.</dc:description>
+			<dc:creator rdf:resource="mailto:mak1g11@soton.ac.uk"/>
+			<dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-02-14</dc:date>
+		</rdf:Description>
 
 		 <rdfs:Class rdf:ID="Student">
 		 	<rdfs:subClassOf rdf:resource="&foaf;Person"/>
