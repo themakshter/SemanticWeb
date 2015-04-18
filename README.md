@@ -1,2 +1,2 @@
 # SemanticWeb
-Work from the Semantic Web Technologies module
+Work from the Semantic Web Technologies (COMP6215) module
