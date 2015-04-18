@@ -4,7 +4,7 @@
 		 xmlns:foaf="http://xmlns.com/foaf/0.1/">
 
 	<rdf:Description rdf:about="">
-		<dc:creator rdf:resource="me"/>
+		<dc:creator rdf:resource="themakshter"/>
 		<dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-02-14</dc:date>
 	</rdf:Description>
 
