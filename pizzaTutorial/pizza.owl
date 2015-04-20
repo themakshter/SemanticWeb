@@ -172,6 +172,18 @@
     <Declaration>
         <ObjectProperty IRI="#isToppingOf"/>
     </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCalorificContentValue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ExampleMargherita"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ExamplePepperoniPizza"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#QuattroFormaggio"/>
+    </Declaration>
     <EquivalentClasses>
         <Class IRI="#CheesyPizza"/>
         <ObjectIntersectionOf>
@@ -687,6 +699,33 @@
         <Class IRI="#PizzaBase"/>
         <Class IRI="#PizzaTopping"/>
     </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#MargheritaPizza"/>
+        <NamedIndividual IRI="#ExampleMargherita"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AmericanaPizza"/>
+        <NamedIndividual IRI="#ExamplePepperoniPizza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FourCheesePizza"/>
+        <NamedIndividual IRI="#QuattroFormaggio"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCalorificContentValue"/>
+        <NamedIndividual IRI="#ExampleMargherita"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">263</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCalorificContentValue"/>
+        <NamedIndividual IRI="#ExamplePepperoniPizza"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">950</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCalorificContentValue"/>
+        <NamedIndividual IRI="#QuattroFormaggio"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">723</Literal>
+    </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasBase"/>
         <ObjectProperty IRI="#hasIngredient"/>
