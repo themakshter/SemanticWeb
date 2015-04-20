@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1429533187392" name="http://www.semanticweb.org/mohammadali/ontologies/2015/3/fhkb" uri="fhkb.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429543624000" name="duplicate:http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/fhkb.owl" uri="fhkb_snapshots/fhkb.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429543624000" name="duplicate:http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/fhkb.owl" uri="fhkb_snapshots/fhkb_chapter_2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429543624000" name="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter2_a1.owl" uri="fhkb_snapshots/convenience_snapshots/fhkb_chapter_3_a1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429543624000" name="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter2_a2.owl" uri="fhkb_snapshots/convenience_snapshots/fhkb_chapter_3_a2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429543624000" name="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_10.owl" uri="fhkb_snapshots/fhkb_chapter_10.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429543624000" name="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl" uri="fhkb_snapshots/fhkb_chapter_3.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429543624000" name="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_4.owl" uri="fhkb_snapshots/fhkb_chapter_4.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429543624000" name="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_5.owl" uri="fhkb_snapshots/fhkb_chapter_5.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429543624000" name="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_6.owl" uri="fhkb_snapshots/fhkb_chapter_6.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429543624000" name="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl" uri="fhkb_snapshots/fhkb_chapter_7.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429543624000" name="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_8.owl" uri="fhkb_snapshots/fhkb_chapter_8.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429543624000" name="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_9.owl" uri="fhkb_snapshots/fhkb_chapter_9.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429543624000" name="http://www.semanticweb.org/mohammadali/ontologies/2015/3/fhkb" uri="fhkb.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429543624000" name="shadowed:http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl" uri="fhkb_snapshots/convenience_snapshots/fhkb_chapter_3_individuals_raw.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429543624000" name="shadowed:http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_4.owl" uri="fhkb_snapshots/convenience_snapshots/fhkb_chapter_4_individuals_incl_birthdate.owl"/>
     </group>
 </catalog>
