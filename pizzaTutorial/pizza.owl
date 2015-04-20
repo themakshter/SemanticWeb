@@ -757,17 +757,17 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCalorificContentValue"/>
         <NamedIndividual IRI="#ExampleMargherita"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">263</Literal>
+        <Literal datatypeIRI="&xsd;integer">263</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCalorificContentValue"/>
         <NamedIndividual IRI="#ExamplePepperoniPizza"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">950</Literal>
+        <Literal datatypeIRI="&xsd;integer">950</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCalorificContentValue"/>
         <NamedIndividual IRI="#QuattroFormaggio"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">723</Literal>
+        <Literal datatypeIRI="&xsd;integer">723</Literal>
     </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasBase"/>
