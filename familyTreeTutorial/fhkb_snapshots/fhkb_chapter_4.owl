@@ -1,0 +1,643 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_4.owl#"
+     xml:base="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_4.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_4.owl">
+        <owl:imports rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl"/>
+		<rdfs:comment>This ontology was created as part of the Manchester Family History Advanced OWL Tutorial by Robert Stevens, Margaret Stevens, Nicolas Matentzoglu and Simon Jupp. It is intended for educational use only.</rdfs:comment>
+        <rdfs:seeAlso>http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/</rdfs:seeAlso>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_4.owl#hasBirthYear -->
+
+    <owl:DatatypeProperty rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_4.owl#hasBirthYear">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_2.owl#Person"/>
+        <rdfs:subPropertyOf rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_4.owl#hasEventYear"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_4.owl#hasDeathYear -->
+
+    <owl:DatatypeProperty rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_4.owl#hasDeathYear">
+        <rdfs:domain rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_2.owl#Person"/>
+        <rdfs:subPropertyOf rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_4.owl#hasEventYear"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_4.owl#hasEventYear -->
+
+    <owl:DatatypeProperty rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_4.owl#hasEventYear">
+        <rdfs:domain rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_2.owl#Person"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_4.owl#hasFamilyName -->
+
+    <owl:DatatypeProperty rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_4.owl#hasFamilyName">
+        <rdfs:subPropertyOf rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_4.owl#hasName"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_4.owl#hasFirstGivenName -->
+
+    <owl:DatatypeProperty rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_4.owl#hasFirstGivenName">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_4.owl#hasGivenName"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_4.owl#hasGivenName -->
+
+    <owl:DatatypeProperty rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_4.owl#hasGivenName">
+        <rdfs:subPropertyOf rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_4.owl#hasName"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_4.owl#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_4.owl#hasName">
+        <rdfs:domain rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_2.owl#Person"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_4.owl#hasSecondGivenName -->
+
+    <owl:DatatypeProperty rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_4.owl#hasSecondGivenName">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_4.owl#hasGivenName"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Alec_John_Archer_1927 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Alec_John_Archer_1927">
+        <hasBirthYear rdf:datatype="&xsd;integer">1927</hasBirthYear>
+        <hasFirstGivenName rdf:datatype="&xsd;string">Alec</hasFirstGivenName>
+        <hasFamilyName rdf:datatype="&xsd;string">Archer</hasFamilyName>
+        <hasSecondGivenName rdf:datatype="&xsd;string">John</hasSecondGivenName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Charles_Herbert_Rever_1895 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Charles_Herbert_Rever_1895">
+        <hasBirthYear rdf:datatype="&xsd;integer">1895</hasBirthYear>
+        <hasFirstGivenName rdf:datatype="&xsd;string">Charles</hasFirstGivenName>
+        <hasSecondGivenName rdf:datatype="&xsd;string">Herbert</hasSecondGivenName>
+        <hasFamilyName rdf:datatype="&xsd;string">Rever</hasFamilyName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Charlotte_Caroline_Jane_Bright_1894 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Charlotte_Caroline_Jane_Bright_1894">
+        <hasBirthYear rdf:datatype="&xsd;integer">1894</hasBirthYear>
+        <hasFamilyName rdf:datatype="&xsd;string">Bright</hasFamilyName>
+        <hasSecondGivenName rdf:datatype="&xsd;string">Caroline</hasSecondGivenName>
+        <hasFirstGivenName rdf:datatype="&xsd;string">Charlotte</hasFirstGivenName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Charlotte_Hewett_1863 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Charlotte_Hewett_1863">
+        <hasBirthYear rdf:datatype="&xsd;integer">1863</hasBirthYear>
+        <hasFirstGivenName rdf:datatype="&xsd;string">Charlotte</hasFirstGivenName>
+        <hasFamilyName rdf:datatype="&xsd;string">Hewett</hasFamilyName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Clare_Bright_1966 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Clare_Bright_1966">
+        <hasBirthYear rdf:datatype="&xsd;integer">1966</hasBirthYear>
+        <hasFamilyName rdf:datatype="&xsd;string">Bright</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="&xsd;string">Clare</hasFirstGivenName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#David_Bright_1934 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#David_Bright_1934">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_2.owl#isParentOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Robert_David_Bright_1965"/>
+                            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Richard_John_Bright_1962"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <hasBirthYear rdf:datatype="&xsd;integer">1934</hasBirthYear>
+        <hasFamilyName rdf:datatype="&xsd;string">Bright</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="&xsd;string">David</hasFirstGivenName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Dereck_Heath -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Dereck_Heath">
+        <hasFirstGivenName rdf:datatype="&xsd;string">Dereck</hasFirstGivenName>
+        <hasFamilyName rdf:datatype="&xsd;string">Heath</hasFamilyName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Diana_Pool -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Diana_Pool">
+        <hasFirstGivenName rdf:datatype="&xsd;string">Diana</hasFirstGivenName>
+        <hasFamilyName rdf:datatype="&xsd;string">Pool</hasFamilyName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Eileen_Mary_Rever_1929 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Eileen_Mary_Rever_1929">
+        <hasBirthYear rdf:datatype="&xsd;integer">1929</hasBirthYear>
+        <hasFirstGivenName rdf:datatype="&xsd;string">Eileen</hasFirstGivenName>
+        <hasSecondGivenName rdf:datatype="&xsd;string">Mary</hasSecondGivenName>
+        <hasFamilyName rdf:datatype="&xsd;string">Rever</hasFamilyName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Elizabeth_Frances_Jessop_1869 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Elizabeth_Frances_Jessop_1869">
+        <hasBirthYear rdf:datatype="&xsd;integer">1869</hasBirthYear>
+        <hasFirstGivenName rdf:datatype="&xsd;string">Elizabeth</hasFirstGivenName>
+        <hasSecondGivenName rdf:datatype="&xsd;string">Frances</hasSecondGivenName>
+        <hasFamilyName rdf:datatype="&xsd;string">Jessop</hasFamilyName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Ethel_Archer_1912 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Ethel_Archer_1912">
+        <hasBirthYear rdf:datatype="&xsd;integer">1912</hasBirthYear>
+        <hasFamilyName rdf:datatype="&xsd;string">Archer</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="&xsd;string">Ethel</hasFirstGivenName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Frederick_Herbert_Bright_1889 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Frederick_Herbert_Bright_1889">
+        <hasBirthYear rdf:datatype="&xsd;integer">1889</hasBirthYear>
+        <hasFamilyName rdf:datatype="&xsd;string">Bright</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="&xsd;string">Frederick</hasFirstGivenName>
+        <hasSecondGivenName rdf:datatype="&xsd;string">Herbert</hasSecondGivenName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Henry_Edmund_Bright_1862 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Henry_Edmund_Bright_1862">
+        <hasBirthYear rdf:datatype="&xsd;integer">1862</hasBirthYear>
+        <hasFamilyName rdf:datatype="&xsd;string">Bright</hasFamilyName>
+        <hasSecondGivenName rdf:datatype="&xsd;string">Edmund</hasSecondGivenName>
+        <hasFirstGivenName rdf:datatype="&xsd;string">Henry</hasFirstGivenName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Henry_Edmund_Bright_1887 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Henry_Edmund_Bright_1887">
+        <hasBirthYear rdf:datatype="&xsd;integer">1887</hasBirthYear>
+        <hasFamilyName rdf:datatype="&xsd;string">Bright</hasFamilyName>
+        <hasSecondGivenName rdf:datatype="&xsd;string">Edmund</hasSecondGivenName>
+        <hasFirstGivenName rdf:datatype="&xsd;string">Henry</hasFirstGivenName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Ian_Bright_1959 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Ian_Bright_1959">
+        <hasBirthYear rdf:datatype="&xsd;integer">1959</hasBirthYear>
+        <hasFamilyName rdf:datatype="&xsd;string">Bright</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="&xsd;string">Ian</hasFirstGivenName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Iris_Ellen_Archer_1906 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Iris_Ellen_Archer_1906">
+        <hasBirthYear rdf:datatype="&xsd;integer">1906</hasBirthYear>
+        <hasFamilyName rdf:datatype="&xsd;string">Archer</hasFamilyName>
+        <hasSecondGivenName rdf:datatype="&xsd;string">Ellen</hasSecondGivenName>
+        <hasFirstGivenName rdf:datatype="&xsd;string">Iris</hasFirstGivenName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#James_Alexander_Archer_1882 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#James_Alexander_Archer_1882">
+        <hasBirthYear rdf:datatype="&xsd;integer">1882</hasBirthYear>
+        <hasSecondGivenName rdf:datatype="&xsd;string">Alexander</hasSecondGivenName>
+        <hasFamilyName rdf:datatype="&xsd;string">Archer</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="&xsd;string">James</hasFirstGivenName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#James_Bright_1964 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#James_Bright_1964">
+        <hasBirthYear rdf:datatype="&xsd;integer">1964</hasBirthYear>
+        <hasFamilyName rdf:datatype="&xsd;string">Bright</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="&xsd;string">James</hasFirstGivenName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#James_Frank_Hayden_Bright_1891 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#James_Frank_Hayden_Bright_1891">
+        <hasBirthYear rdf:datatype="&xsd;integer">1891</hasBirthYear>
+        <hasFamilyName rdf:datatype="&xsd;string">Bright</hasFamilyName>
+        <hasSecondGivenName rdf:datatype="&xsd;string">Frank</hasSecondGivenName>
+        <hasFirstGivenName rdf:datatype="&xsd;string">James</hasFirstGivenName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Janet_Bright_1964 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Janet_Bright_1964">
+        <hasBirthYear rdf:datatype="&xsd;integer">1964</hasBirthYear>
+        <hasFamilyName rdf:datatype="&xsd;string">Bright</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="&xsd;string">Janet</hasFirstGivenName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#John_Bright_1930 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#John_Bright_1930">
+        <hasBirthYear rdf:datatype="&xsd;integer">1930</hasBirthYear>
+        <hasFamilyName rdf:datatype="&xsd;string">Bright</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="&xsd;string">John</hasFirstGivenName>
+        <hasFamilyName rdf:datatype="&xsd;string">Steward</hasFamilyName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#John_Tacey_Steward_1873 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#John_Tacey_Steward_1873">
+        <hasBirthYear rdf:datatype="&xsd;integer">1873</hasBirthYear>
+        <hasFirstGivenName rdf:datatype="&xsd;string">John</hasFirstGivenName>
+        <hasSecondGivenName rdf:datatype="&xsd;string">Tacey</hasSecondGivenName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Joyce_Archer_1921 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Joyce_Archer_1921">
+        <hasBirthYear rdf:datatype="&xsd;integer">1921</hasBirthYear>
+        <hasFamilyName rdf:datatype="&xsd;string">Archer</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="&xsd;string">Joyce</hasFirstGivenName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Joyce_Gosport -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Joyce_Gosport">
+        <hasFamilyName rdf:datatype="&xsd;string">Gosport</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="&xsd;string">Joyce</hasFirstGivenName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Julie_Bright_1966 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Julie_Bright_1966">
+        <hasBirthYear rdf:datatype="&xsd;integer">1966</hasBirthYear>
+        <hasFamilyName rdf:datatype="&xsd;string">Bright</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="&xsd;string">Julie</hasFirstGivenName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Kathleen_Minnie_Bright_1904 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Kathleen_Minnie_Bright_1904">
+        <hasBirthYear rdf:datatype="&xsd;integer">1904</hasBirthYear>
+        <hasFamilyName rdf:datatype="&xsd;string">Bright</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="&xsd;string">Kathleen</hasFirstGivenName>
+        <hasSecondGivenName rdf:datatype="&xsd;string">Minnie</hasSecondGivenName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Leonard_John_Bright_1890 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Leonard_John_Bright_1890">
+        <hasBirthYear rdf:datatype="&xsd;integer">1890</hasBirthYear>
+        <hasFamilyName rdf:datatype="&xsd;string">Bright</hasFamilyName>
+        <hasSecondGivenName rdf:datatype="&xsd;string">John</hasSecondGivenName>
+        <hasFirstGivenName rdf:datatype="&xsd;string">Leonard</hasFirstGivenName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Lois_Green_1871 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Lois_Green_1871">
+        <hasBirthYear rdf:datatype="&xsd;integer">1871</hasBirthYear>
+        <hasFamilyName rdf:datatype="&xsd;string">Green</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="&xsd;string">Lois</hasFirstGivenName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Margaret_Grace_Rever_1934 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Margaret_Grace_Rever_1934">
+        <hasBirthYear rdf:datatype="&xsd;integer">1934</hasBirthYear>
+        <hasSecondGivenName rdf:datatype="&xsd;string">Grace</hasSecondGivenName>
+        <hasFirstGivenName rdf:datatype="&xsd;string">Margaret</hasFirstGivenName>
+        <hasFamilyName rdf:datatype="&xsd;string">Rever</hasFamilyName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Mark_Anthony_Heath_1960 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Mark_Anthony_Heath_1960">
+        <hasBirthYear rdf:datatype="&xsd;integer">1960</hasBirthYear>
+        <hasSecondGivenName rdf:datatype="&xsd;string">Anthony</hasSecondGivenName>
+        <hasFamilyName rdf:datatype="&xsd;string">Heath</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="&xsd;string">Mark</hasFirstGivenName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Mark_Bright_1956 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Mark_Bright_1956">
+        <hasBirthYear rdf:datatype="&xsd;integer">1956</hasBirthYear>
+        <hasFamilyName rdf:datatype="&xsd;string">Bright</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="&xsd;string">Mark</hasFirstGivenName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Nicholas_Charles_Heath_1964 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Nicholas_Charles_Heath_1964">
+        <hasBirthYear rdf:datatype="&xsd;integer">1964</hasBirthYear>
+        <hasSecondGivenName rdf:datatype="&xsd;string">Charles</hasSecondGivenName>
+        <hasFamilyName rdf:datatype="&xsd;string">Heath</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="&xsd;string">Nicholas</hasFirstGivenName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Nora_Ada_Bright_1899 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Nora_Ada_Bright_1899">
+        <hasBirthYear rdf:datatype="&xsd;integer">1899</hasBirthYear>
+        <hasSecondGivenName rdf:datatype="&xsd;string">Ada</hasSecondGivenName>
+        <hasFamilyName rdf:datatype="&xsd;string">Bright</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="&xsd;string">Nora</hasFirstGivenName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Norman_James_Archer_1909 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Norman_James_Archer_1909">
+        <hasBirthYear rdf:datatype="&xsd;integer">1909</hasBirthYear>
+        <hasFamilyName rdf:datatype="&xsd;string">Archer</hasFamilyName>
+        <hasSecondGivenName rdf:datatype="&xsd;string">James</hasSecondGivenName>
+        <hasFirstGivenName rdf:datatype="&xsd;string">Norman</hasFirstGivenName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Peter_William_Bright_1941 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Peter_William_Bright_1941">
+        <hasBirthYear rdf:datatype="&xsd;integer">1941</hasBirthYear>
+        <hasFamilyName rdf:datatype="&xsd;string">Bright</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="&xsd;string">Peter</hasFirstGivenName>
+        <hasSecondGivenName rdf:datatype="&xsd;string">William</hasSecondGivenName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Richard_John_Bright_1962 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Richard_John_Bright_1962">
+        <hasBirthYear rdf:datatype="&xsd;integer">1962</hasBirthYear>
+        <hasFamilyName rdf:datatype="&xsd;string">Bright</hasFamilyName>
+        <hasSecondGivenName rdf:datatype="&xsd;string">John</hasSecondGivenName>
+        <hasFirstGivenName rdf:datatype="&xsd;string">Richard</hasFirstGivenName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Robert_David_Bright_1965 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Robert_David_Bright_1965">
+        <hasBirthYear rdf:datatype="&xsd;integer">1965</hasBirthYear>
+        <hasFamilyName rdf:datatype="&xsd;string">Bright</hasFamilyName>
+        <hasSecondGivenName rdf:datatype="&xsd;string">David</hasSecondGivenName>
+        <hasFirstGivenName rdf:datatype="&xsd;string">Robert</hasFirstGivenName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Violet_Heath_1887 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Violet_Heath_1887">
+        <hasBirthYear rdf:datatype="&xsd;integer">1887</hasBirthYear>
+        <hasFamilyName rdf:datatype="&xsd;string">Heath</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="&xsd;string">Violet</hasFirstGivenName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Violet_Sylvia_Steward_1894 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Violet_Sylvia_Steward_1894">
+        <hasBirthYear rdf:datatype="&xsd;integer">1894</hasBirthYear>
+        <hasFamilyName rdf:datatype="&xsd;string">Steward</hasFamilyName>
+        <hasSecondGivenName rdf:datatype="&xsd;string">Sylvia</hasSecondGivenName>
+        <hasFirstGivenName rdf:datatype="&xsd;string">Violet</hasFirstGivenName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#William_Bright_1970 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#William_Bright_1970">
+        <hasBirthYear rdf:datatype="&xsd;integer">1970</hasBirthYear>
+        <hasFamilyName rdf:datatype="&xsd;string">Bright</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="&xsd;string">William</hasFirstGivenName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#William_George_Bright_1901 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#William_George_Bright_1901">
+        <hasBirthYear rdf:datatype="&xsd;integer">1901</hasBirthYear>
+        <hasFamilyName rdf:datatype="&xsd;string">Bright</hasFamilyName>
+        <hasSecondGivenName rdf:datatype="&xsd;string">George</hasSecondGivenName>
+        <hasFirstGivenName rdf:datatype="&xsd;string">William</hasFirstGivenName>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#William_Rever_1870 -->
+
+    <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#William_Rever_1870">
+        <hasBirthYear rdf:datatype="&xsd;integer">1870</hasBirthYear>
+        <hasFamilyName rdf:datatype="&xsd;string">Rever</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="&xsd;string">William</hasFirstGivenName>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Alec_John_Archer_1927"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Charles_Herbert_Rever_1895"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Charlotte_Caroline_Jane_Bright_1894"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Charlotte_Hewett_1863"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Clare_Bright_1966"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#David_Bright_1934"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Eileen_Mary_Rever_1929"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Elizabeth_Frances_Jessop_1869"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Ethel_Archer_1912"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Frederick_Herbert_Bright_1889"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Henry_Edmund_Bright_1862"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Henry_Edmund_Bright_1887"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Ian_Bright_1959"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Iris_Ellen_Archer_1906"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#James_Alexander_Archer_1882"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#James_Bright_1964"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#James_Frank_Hayden_Bright_1891"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Janet_Bright_1964"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#John_Bright_1930"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#John_Tacey_Steward_1873"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Joyce_Archer_1921"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Julie_Bright_1966"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Kathleen_Minnie_Bright_1904"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Leonard_John_Bright_1890"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Lois_Green_1871"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Margaret_Grace_Rever_1934"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Mark_Anthony_Heath_1960"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Mark_Bright_1956"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Nicholas_Charles_Heath_1964"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Nora_Ada_Bright_1899"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Norman_James_Archer_1909"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Peter_William_Bright_1941"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Richard_John_Bright_1962"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Robert_David_Bright_1965"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Violet_Heath_1887"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Violet_Sylvia_Steward_1894"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#William_Bright_1970"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#William_George_Bright_1901"/>
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#William_Rever_1870"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+

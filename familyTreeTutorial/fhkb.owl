@@ -16,10 +16,11 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      ontologyIRI="http://www.semanticweb.org/mohammadali/ontologies/2015/3/fhkb">
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">A Family history knowledge base</Literal>
@@ -65,6 +66,18 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isParentOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#david_bright"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#grant_plint"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#margaret_grace_rever"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#richard_john_bright"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="#Man"/>
@@ -153,6 +166,22 @@
         <Class IRI="#Person"/>
         <Class IRI="#Sex"/>
     </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Man"/>
+        <NamedIndividual IRI="#david_bright"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Man"/>
+        <NamedIndividual IRI="#grant_plint"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Woman"/>
+        <NamedIndividual IRI="#margaret_grace_rever"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Man"/>
+        <NamedIndividual IRI="#richard_john_bright"/>
+    </ClassAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasFather"/>
         <ObjectProperty IRI="#hasParent"/>
@@ -174,8 +203,8 @@
         <ObjectProperty IRI="#isFatherOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#hasMother"/>
         <ObjectProperty IRI="#isMotherOf"/>
+        <ObjectProperty IRI="#hasMother"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasParent"/>
@@ -220,6 +249,11 @@
         <ObjectProperty IRI="#hasSex"/>
         <Class IRI="#Sex"/>
     </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#grant_plint</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Grant Plinth</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 

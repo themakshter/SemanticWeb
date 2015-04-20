@@ -1,0 +1,386 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY fhkb_chapter_2 "http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_2.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#"
+     xml:base="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:fhkb_chapter_2="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_2.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl">
+        <owl:imports rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_2.owl"/>
+		<rdfs:comment>This ontology was created as part of the Manchester Family History Advanced OWL Tutorial by Robert Stevens, Margaret Stevens, Nicolas Matentzoglu and Simon Jupp. It is intended for educational use only.</rdfs:comment>
+        <rdfs:seeAlso>http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/</rdfs:seeAlso>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Alec_John_Archer_1927 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Alec_John_Archer_1927">
+        <fhkb_chapter_2:hasFather rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#James_Alexander_Archer_1882"/>
+        <fhkb_chapter_2:hasMother rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Violet_Heath_1887"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Charles_Herbert_Rever_1895 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Charles_Herbert_Rever_1895">
+        <fhkb_chapter_2:hasMother rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Elizabeth_Frances_Jessop_1869"/>
+        <fhkb_chapter_2:hasFather rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#William_Rever_1870"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Charlotte_Caroline_Jane_Bright_1894 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Charlotte_Caroline_Jane_Bright_1894">
+        <fhkb_chapter_2:hasMother rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Charlotte_Hewett_1863"/>
+        <fhkb_chapter_2:hasFather rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Henry_Edmund_Bright_1862"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Charlotte_Hewett_1863 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Charlotte_Hewett_1863"/>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Clare_Bright_1966 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Clare_Bright_1966">
+        <fhkb_chapter_2:hasMother rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Diana_Pool"/>
+        <fhkb_chapter_2:hasFather rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Peter_William_Bright_1941"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#David_Bright_1934 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#David_Bright_1934">
+        <fhkb_chapter_2:hasMother rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Iris_Ellen_Archer_1906"/>
+        <fhkb_chapter_2:hasFather rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#William_George_Bright_1901"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Dereck_Heath -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Dereck_Heath"/>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Diana_Pool -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Diana_Pool"/>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Eileen_Mary_Rever_1929 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Eileen_Mary_Rever_1929">
+        <fhkb_chapter_2:hasFather rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Charles_Herbert_Rever_1895"/>
+        <fhkb_chapter_2:hasMother rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Violet_Sylvia_Steward_1894"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Elizabeth_Frances_Jessop_1869 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Elizabeth_Frances_Jessop_1869"/>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Ethel_Archer_1912 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Ethel_Archer_1912">
+        <fhkb_chapter_2:hasFather rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#James_Alexander_Archer_1882"/>
+        <fhkb_chapter_2:hasMother rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Violet_Heath_1887"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Frederick_Herbert_Bright_1889 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Frederick_Herbert_Bright_1889">
+        <fhkb_chapter_2:hasMother rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Charlotte_Hewett_1863"/>
+        <fhkb_chapter_2:hasFather rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Henry_Edmund_Bright_1862"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Henry_Edmund_Bright_1862 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Henry_Edmund_Bright_1862"/>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Henry_Edmund_Bright_1887 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Henry_Edmund_Bright_1887">
+        <fhkb_chapter_2:hasMother rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Charlotte_Hewett_1863"/>
+        <fhkb_chapter_2:hasFather rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Henry_Edmund_Bright_1862"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Ian_Bright_1959 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Ian_Bright_1959">
+        <fhkb_chapter_2:hasFather rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#John_Bright_1930"/>
+        <fhkb_chapter_2:hasMother rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Joyce_Gosport"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Iris_Ellen_Archer_1906 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Iris_Ellen_Archer_1906">
+        <fhkb_chapter_2:hasFather rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#James_Alexander_Archer_1882"/>
+        <fhkb_chapter_2:hasMother rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Violet_Heath_1887"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#James_Alexander_Archer_1882 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#James_Alexander_Archer_1882"/>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#James_Bright_1964 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#James_Bright_1964">
+        <fhkb_chapter_2:hasMother rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Diana_Pool"/>
+        <fhkb_chapter_2:hasFather rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Peter_William_Bright_1941"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#James_Frank_Hayden_Bright_1891 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#James_Frank_Hayden_Bright_1891">
+        <fhkb_chapter_2:hasMother rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Charlotte_Hewett_1863"/>
+        <fhkb_chapter_2:hasFather rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Henry_Edmund_Bright_1862"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Janet_Bright_1964 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Janet_Bright_1964">
+        <fhkb_chapter_2:hasFather rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#John_Bright_1930"/>
+        <fhkb_chapter_2:hasMother rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Joyce_Gosport"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#John_Bright_1930 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#John_Bright_1930">
+        <fhkb_chapter_2:hasMother rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Iris_Ellen_Archer_1906"/>
+        <fhkb_chapter_2:hasFather rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#William_George_Bright_1901"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#John_Tacey_Steward_1873 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#John_Tacey_Steward_1873"/>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Joyce_Archer_1921 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Joyce_Archer_1921">
+        <fhkb_chapter_2:hasFather rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#James_Alexander_Archer_1882"/>
+        <fhkb_chapter_2:hasMother rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Violet_Heath_1887"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Joyce_Gosport -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Joyce_Gosport"/>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Julie_Bright_1966 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Julie_Bright_1966">
+        <fhkb_chapter_2:hasMother rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Diana_Pool"/>
+        <fhkb_chapter_2:hasFather rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Peter_William_Bright_1941"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Kathleen_Minnie_Bright_1904 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Kathleen_Minnie_Bright_1904">
+        <fhkb_chapter_2:hasMother rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Charlotte_Hewett_1863"/>
+        <fhkb_chapter_2:hasFather rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Henry_Edmund_Bright_1862"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Leonard_John_Bright_1890 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Leonard_John_Bright_1890">
+        <fhkb_chapter_2:hasMother rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Charlotte_Hewett_1863"/>
+        <fhkb_chapter_2:hasFather rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Henry_Edmund_Bright_1862"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Lois_Green_1871 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Lois_Green_1871"/>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Margaret_Grace_Rever_1934 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Margaret_Grace_Rever_1934">
+        <fhkb_chapter_2:hasFather rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Charles_Herbert_Rever_1895"/>
+        <fhkb_chapter_2:hasMother rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Violet_Sylvia_Steward_1894"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Mark_Anthony_Heath_1960 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Mark_Anthony_Heath_1960">
+        <fhkb_chapter_2:hasFather rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Dereck_Heath"/>
+        <fhkb_chapter_2:hasMother rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Eileen_Mary_Rever_1929"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Mark_Bright_1956 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Mark_Bright_1956">
+        <fhkb_chapter_2:hasFather rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#John_Bright_1930"/>
+        <fhkb_chapter_2:hasMother rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Joyce_Gosport"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Nicholas_Charles_Heath_1964 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Nicholas_Charles_Heath_1964">
+        <fhkb_chapter_2:hasFather rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Dereck_Heath"/>
+        <fhkb_chapter_2:hasMother rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Eileen_Mary_Rever_1929"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Nora_Ada_Bright_1899 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Nora_Ada_Bright_1899">
+        <fhkb_chapter_2:hasMother rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Charlotte_Hewett_1863"/>
+        <fhkb_chapter_2:hasFather rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Henry_Edmund_Bright_1862"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Norman_James_Archer_1909 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Norman_James_Archer_1909">
+        <fhkb_chapter_2:hasFather rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#James_Alexander_Archer_1882"/>
+        <fhkb_chapter_2:hasMother rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Violet_Heath_1887"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Peter_William_Bright_1941 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Peter_William_Bright_1941">
+        <fhkb_chapter_2:hasMother rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Iris_Ellen_Archer_1906"/>
+        <fhkb_chapter_2:hasFather rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#William_George_Bright_1901"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Richard_John_Bright_1962 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Richard_John_Bright_1962">
+        <fhkb_chapter_2:hasFather rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#David_Bright_1934"/>
+        <fhkb_chapter_2:hasMother rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Margaret_Grace_Rever_1934"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Robert_David_Bright_1965 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Robert_David_Bright_1965">
+        <fhkb_chapter_2:hasFather rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#David_Bright_1934"/>
+        <fhkb_chapter_2:hasMother rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Margaret_Grace_Rever_1934"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Violet_Heath_1887 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Violet_Heath_1887"/>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Violet_Sylvia_Steward_1894 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Violet_Sylvia_Steward_1894">
+        <fhkb_chapter_2:hasFather rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#John_Tacey_Steward_1873"/>
+        <fhkb_chapter_2:hasMother rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Lois_Green_1871"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#William_Bright_1970 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#William_Bright_1970">
+        <fhkb_chapter_2:hasFather rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#John_Bright_1930"/>
+        <fhkb_chapter_2:hasMother rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Joyce_Gosport"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#William_George_Bright_1901 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#William_George_Bright_1901">
+        <fhkb_chapter_2:hasMother rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Charlotte_Hewett_1863"/>
+        <fhkb_chapter_2:hasFather rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Henry_Edmund_Bright_1862"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#William_Rever_1870 -->
+
+    <owl:NamedIndividual rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#William_Rever_1870"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+

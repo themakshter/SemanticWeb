@@ -1,0 +1,268 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY fhkb_chapter_5 "http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_5.owl#" >
+    <!ENTITY fhkb_chapter_3 "http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#" >
+    <!ENTITY fhkb_chapter_2 "http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_2.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#"
+     xml:base="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl"
+     xmlns:fhkb_chapter_2="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_2.owl#"
+     xmlns:fhkb_chapter_3="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:fhkb_chapter_5="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_5.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl">
+        <owl:imports rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_6.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_2.owl#hasParent -->
+
+    <rdf:Description rdf:about="&fhkb_chapter_2;hasParent">
+        <owl:equivalentProperty rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isChildOf"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#hasAunt -->
+
+    <owl:ObjectProperty rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#hasAunt"/>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#hasChild -->
+
+    <owl:ObjectProperty rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#hasChild"/>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#hasDaughter -->
+
+    <owl:ObjectProperty rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#hasDaughter">
+        <rdfs:subPropertyOf rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#hasChild"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#hasGreatAunt -->
+
+    <owl:ObjectProperty rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#hasGreatAunt"/>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#hasGreatUncle -->
+
+    <owl:ObjectProperty rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#hasGreatUncle"/>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#hasSon -->
+
+    <owl:ObjectProperty rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#hasSon">
+        <rdfs:subPropertyOf rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#hasChild"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#hasUncle -->
+
+    <owl:ObjectProperty rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#hasUncle"/>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isAuntOf -->
+
+    <owl:ObjectProperty rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isAuntOf">
+        <rdfs:domain rdf:resource="&fhkb_chapter_2;Woman"/>
+        <owl:inverseOf rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#hasAunt"/>
+        <rdfs:subPropertyOf rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isBloodrelationOf"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isSisterOf"/>
+            <rdf:Description rdf:about="&fhkb_chapter_2;isParentOf"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isBloodrelationOf -->
+
+    <owl:ObjectProperty rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isBloodrelationOf">
+        <rdfs:subPropertyOf rdf:resource="&fhkb_chapter_5;hasRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isBrotherOf -->
+
+    <owl:ObjectProperty rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isBrotherOf">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:domain rdf:resource="&fhkb_chapter_2;Man"/>
+        <rdfs:subPropertyOf rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isSiblingOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isChildOf -->
+
+    <owl:ObjectProperty rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isChildOf">
+        <owl:inverseOf rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#hasChild"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isDaughterOf -->
+
+    <owl:ObjectProperty rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isDaughterOf">
+        <owl:inverseOf rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#hasDaughter"/>
+        <rdfs:subPropertyOf rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isChildOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isGreatAuntOf -->
+
+    <owl:ObjectProperty rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isGreatAuntOf">
+        <rdfs:domain rdf:resource="&fhkb_chapter_2;Woman"/>
+        <owl:inverseOf rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#hasGreatAunt"/>
+        <rdfs:subPropertyOf rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isBloodrelationOf"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isAuntOf"/>
+            <rdf:Description rdf:about="&fhkb_chapter_2;isParentOf"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isGreatUncleOf -->
+
+    <owl:ObjectProperty rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isGreatUncleOf">
+        <rdfs:domain rdf:resource="&fhkb_chapter_2;Man"/>
+        <owl:inverseOf rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#hasGreatUncle"/>
+        <rdfs:subPropertyOf rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isBloodrelationOf"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isUncleOf"/>
+            <rdf:Description rdf:about="&fhkb_chapter_2;isParentOf"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isSiblingOf -->
+
+    <owl:ObjectProperty rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isSiblingOf">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isBloodrelationOf"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="&fhkb_chapter_2;hasParent"/>
+            <rdf:Description rdf:about="&fhkb_chapter_2;isParentOf"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isSisterOf -->
+
+    <owl:ObjectProperty rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isSisterOf">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:domain rdf:resource="&fhkb_chapter_2;Woman"/>
+        <rdfs:subPropertyOf rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isSiblingOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isSonOf -->
+
+    <owl:ObjectProperty rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isSonOf">
+        <owl:inverseOf rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#hasSon"/>
+        <rdfs:subPropertyOf rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isChildOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isUncleOf -->
+
+    <owl:ObjectProperty rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isUncleOf">
+        <owl:inverseOf rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#hasUncle"/>
+        <rdfs:subPropertyOf rdf:resource="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isBloodrelationOf"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_7.owl#isBrotherOf"/>
+            <rdf:Description rdf:about="&fhkb_chapter_2;isParentOf"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#David_Bright_1934 -->
+
+    <rdf:Description rdf:about="&fhkb_chapter_3;David_Bright_1934">
+        <isBrotherOf rdf:resource="&fhkb_chapter_3;John_Bright_1930"/>
+        <isBrotherOf rdf:resource="&fhkb_chapter_3;Peter_William_Bright_1941"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Janet_Bright_1964 -->
+
+    <rdf:Description rdf:about="&fhkb_chapter_3;Janet_Bright_1964">
+        <isSisterOf rdf:resource="&fhkb_chapter_3;Ian_Bright_1959"/>
+        <isSisterOf rdf:resource="&fhkb_chapter_3;Mark_Bright_1956"/>
+        <isSisterOf rdf:resource="&fhkb_chapter_3;William_Bright_1970"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Mark_Bright_1956 -->
+
+    <rdf:Description rdf:about="&fhkb_chapter_3;Mark_Bright_1956">
+        <isBrotherOf rdf:resource="&fhkb_chapter_3;Ian_Bright_1959"/>
+        <isBrotherOf rdf:resource="&fhkb_chapter_3;Janet_Bright_1964"/>
+        <isBrotherOf rdf:resource="&fhkb_chapter_3;William_Bright_1970"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://owl.cs.manchester.ac.uk/tutorials/fhkbtutorial/ontology/fhkb_chapter_3.owl#Robert_David_Bright_1965 -->
+
+    <rdf:Description rdf:about="&fhkb_chapter_3;Robert_David_Bright_1965">
+        <isBrotherOf rdf:resource="&fhkb_chapter_3;Richard_John_Bright_1962"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+
