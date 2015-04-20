@@ -919,6 +919,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Country</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Class equivalent to set of individuals described in enumeration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Country</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#MargheritaPizza</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A pizza that only has Mozarella and Tomato toppings</Literal>
     </AnnotationAssertion>
