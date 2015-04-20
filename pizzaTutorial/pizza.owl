@@ -44,6 +44,9 @@
         <Class IRI="#CheesyPizza"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#DeepPanBase"/>
     </Declaration>
     <Declaration>
@@ -164,6 +167,9 @@
         <ObjectProperty IRI="#hasBase"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasCountryOfOrigin"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasIngredient"/>
     </Declaration>
     <Declaration>
@@ -185,10 +191,22 @@
         <DataProperty IRI="#hasCalorificContentValue"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#England"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#ExampleMargherita"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ExamplePepperoniPizza"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#France"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Germany"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Italy"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#QuattroFormaggio"/>
@@ -202,6 +220,15 @@
                 <Class IRI="#CheeseTopping"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Country"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#England"/>
+            <NamedIndividual IRI="#France"/>
+            <NamedIndividual IRI="#Italy"/>
+            <NamedIndividual IRI="#Germany"/>
+        </ObjectOneOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#HighCaloriePizza"/>
@@ -498,6 +525,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#MozzarellaTopping"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasCountryOfOrigin"/>
+            <NamedIndividual IRI="#Italy"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#MushroomTopping"/>
         <Class IRI="#VegetableTopping"/>
     </SubClassOf>
@@ -759,12 +793,28 @@
         <Class IRI="#PizzaTopping"/>
     </DisjointClasses>
     <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#England"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#MargheritaPizza"/>
         <NamedIndividual IRI="#ExampleMargherita"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#AmericanaPizza"/>
         <NamedIndividual IRI="#ExamplePepperoniPizza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#France"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Germany"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Italy"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#FourCheesePizza"/>
