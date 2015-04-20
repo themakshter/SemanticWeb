@@ -47,6 +47,9 @@
         <Class IRI="#DeepPanBase"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#FourCheesePizza"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#GreenPepperTopping"/>
     </Declaration>
     <Declaration>
@@ -334,6 +337,17 @@
     <SubClassOf>
         <Class IRI="#DeepPanBase"/>
         <Class IRI="#PizzaBase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FourCheesePizza"/>
+        <Class IRI="#NamedPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FourCheesePizza"/>
+        <ObjectExactCardinality cardinality="4">
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#CheeseTopping"/>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#GreenPepperTopping"/>
