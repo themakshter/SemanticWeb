@@ -28,12 +28,198 @@
         <Class IRI="#DomainEntity"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Female"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Male"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Man"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Person"/>
     </Declaration>
+    <Declaration>
+        <Class IRI="#Sex"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Woman"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFather"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMother"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSex"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFatherOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMotherOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isParentOf"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Man"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Person"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSex"/>
+                <Class IRI="#Male"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Woman"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Person"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSex"/>
+                <Class IRI="#Female"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Female"/>
+        <Class IRI="#Sex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Male"/>
+        <Class IRI="#Sex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Man"/>
+        <Class IRI="#DomainEntity"/>
+    </SubClassOf>
     <SubClassOf>
         <Class IRI="#Person"/>
         <Class IRI="#DomainEntity"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <ObjectUnionOf>
+            <Class IRI="#Man"/>
+            <Class IRI="#Woman"/>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFather"/>
+            <Class IRI="#Man"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasMother"/>
+            <Class IRI="#Woman"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSex"/>
+            <Class IRI="#Sex"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sex"/>
+        <Class IRI="#DomainEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sex"/>
+        <ObjectUnionOf>
+            <Class IRI="#Female"/>
+            <Class IRI="#Male"/>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Woman"/>
+        <Class IRI="#DomainEntity"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Female"/>
+        <Class IRI="#Male"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Person"/>
+        <Class IRI="#Sex"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasFather"/>
+        <ObjectProperty IRI="#hasParent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasMother"/>
+        <ObjectProperty IRI="#hasParent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isFatherOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isMotherOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasFather"/>
+        <ObjectProperty IRI="#isFatherOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasMother"/>
+        <ObjectProperty IRI="#isMotherOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasParent"/>
+        <ObjectProperty IRI="#isParentOf"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasFather"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasMother"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasSex"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isFatherOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isMotherOf"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFather"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMother"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSex"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFather"/>
+        <Class IRI="#Man"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMother"/>
+        <Class IRI="#Woman"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSex"/>
+        <Class IRI="#Sex"/>
+    </ObjectPropertyRange>
 </Ontology>
 
 
